@@ -2,6 +2,7 @@ import axios from 'axios'
 import './App.css';
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
+import Roster from './pages/Roster'
 // import Login from './pages/Login'
 // import Signup from './pages/Signup'
 
@@ -17,6 +18,7 @@ function App() {
       </header>
       <Navbar />
       <Home />
+      <Roster />
 
     </div>
   );

@@ -28,7 +28,7 @@ const Home = (props) => {
         return (
             <div className="apod-container">
                 <h2>{newAPOD.title}</h2>
-                <img className="apod-image" src={newAPOD.url}/>
+                <img className="apod-image" src='https://pbs.twimg.com/media/EzNXAJxUYActGmC?format=jpg&name=medium'/>
 
                 <p className="apod-desc">{newAPOD.explanation}</p>
 

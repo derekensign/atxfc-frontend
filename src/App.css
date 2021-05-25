@@ -58,7 +58,7 @@ nav a:hover {
     object-fit:cover;
 }
 
-.gallery-container {
+.roster-container {
     max-width: 1600px;
     height: auto;
     display: flex;
@@ -84,7 +84,7 @@ nav a:hover {
     padding: auto;
 }
 
-.gallery-tile {
+.roster-tile {
     width: 300px;
     height: 300px;
     display: flex;
@@ -100,7 +100,7 @@ nav a:hover {
 .tile-image{
     border: 1px solid black;
     border-style: round;
-    width: 250px;
+    width: 213[x];
     height: 150px;
 }
 
