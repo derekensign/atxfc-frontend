@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Roster from './pages/Roster'
+import Fixtures from './pages/Fixtures'
 // import Login from './pages/Login'
 // import Signup from './pages/Signup'
 
@@ -19,6 +20,7 @@ function App() {
       <Navbar />
       <Home />
       <Roster />
+      <Fixtures />
 
     </div>
   );

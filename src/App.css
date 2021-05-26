@@ -100,8 +100,8 @@ nav a:hover {
 .tile-image{
     border: 1px solid black;
     border-style: round;
-    width: 213[x];
-    height: 150px;
+    width: 150px;
+    height: 213px;
 }
 
 .starOutline{
