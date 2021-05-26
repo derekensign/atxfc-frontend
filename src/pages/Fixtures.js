@@ -7,13 +7,16 @@ const Fixtures = () => {
     const getFixtures = async () => {
         try {
             let response = await axios.get(`${process.env.REACT_APP_API_FIXTURES_URL}`,
-            { headers:
+            { 
+                credentials: 'include',
+                method: 'GET',
+                headers:
                 {'x-rapidapi-key': `${process.env.REACT_APP_API_KEY}`,
-                'x-rapidapi-host': 'v3.football.api-sports.io'
+                'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
                 }
             })
 
-            setSchedule(response)
+            setSchedule(response.data.response)
 
             
             } catch (error) {
