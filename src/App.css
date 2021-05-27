@@ -58,6 +58,31 @@ nav a:hover {
     object-fit:cover;
 }
 
+.fixture-box {
+    height: 250px;
+    width: 1000px;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+.away-box {
+    height: 250px;
+    width: 500px;
+}
+
+.home-box {
+    height: 250px;
+    width: 500px;
+}
+
+
+.logo-img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
 .roster-container {
     max-width: 1600px;
     height: auto;

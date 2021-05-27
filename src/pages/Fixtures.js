@@ -26,13 +26,32 @@ const Fixtures = () => {
 
     useEffect(() => {
         getFixtures()},[])
-    
-    console.log(schedule)
 
+    // {schedule.map((game, index) => (
+    //     console.log(game.fixture.date)
+
+    // )}
     
     return (
         <div>
             Fixtures
+            {schedule.map((game, index) => (
+                <div key={index}>
+                    <p>{game.fixture.date}</p>
+                    <div className="fixture-box">
+                        <div className="away-box">
+                            <p>{game.teams.away.name}</p>
+                            <img className="logo-img" src={game.teams.away.logo}></img>
+                            <p>{game.goals.away}</p>
+                        </div>
+                        <div className="home-box">
+                            <p>{game.teams.home.name}</p>
+                            <img className="logo-img" src={game.teams.home.logo}></img>
+                            <p>{game.goals.home}</p>
+                        </div>
+                    </div>
+                </div>
+            ))}
         </div>
     )
 }
