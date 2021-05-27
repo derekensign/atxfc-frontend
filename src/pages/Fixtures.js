@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import moment from 'moment'
 
 const Fixtures = () => {
     const [schedule, setSchedule] = useState([])
@@ -36,8 +37,12 @@ const Fixtures = () => {
         <div>
             Fixtures
             {schedule.map((game, index) => (
+
+            // game.fixture.date.getUTCDate()
+            // game.fixture.date.getUTCFullYer()
+
                 <div key={index}>
-                    <p>{game.fixture.date}</p>
+                    <h4>{moment(game.fixture.date).format('LL')}</h4>
                     <div className="fixture-box">
                         <div className="away-box">
                             <p>{game.teams.away.name}</p>
