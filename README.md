@@ -8,7 +8,7 @@ The purpose of this app is to allow users to follow Austin FC by geting detailed
 <img src="./design-images/erd.png"
      style= "height:400px; width:600px;" />
 <img src="./design-images/wireframes.png"
-     style= "height:400px; width:600px;"  />
+     style= "height:400px; width:600px;"  /> 
 
 
 
