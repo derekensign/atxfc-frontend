@@ -20,14 +20,17 @@ const Navbar = (props) => {
 
                     <>
 
-                        <li><Link className="nav-link" to="/gallery">Gallery</Link></li>
                         <li><Link className="nav-link" to="/profile">Profile</Link></li>
                         <li onClick={() => logout()}><Link className="nav-link" to="/login">Logout</Link></li>
+                        <li><Link className="nav-link" to="/fixtures">Fixtures</Link></li>
+                        <li><Link className="nav-link" to="/roster">Roster</Link></li>
                     </>
 
                     :
                     <>
 
+                        <li><Link className="nav-link" to="/fixtures">Fixtures</Link></li>
+                        <li><Link className="nav-link" to="/roster">Roster</Link></li>
                         <li><Link className="nav-link" to="/login">Login</Link></li>
                         <li><Link className="nav-link" to="/signup">Signup</Link></li>
                     </>

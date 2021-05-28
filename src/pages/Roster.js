@@ -31,7 +31,9 @@ const Roster = () => {
 
             <div key={i} className="roster-tile">
                 <h5>{tile.name}</h5>
-                <p>{`#${tile.number} \n Age: ${tile.age} \n Position: ${tile.position}`}</p>
+                <p>{`#${tile.number}`}</p>
+                 <p>{`Age: ${tile.age}`}</p> 
+                 <p>{`Position: ${tile.position}`}</p>
                 <div className="image-container">
                     <img className="tile-image zoom" src={tile.image}/>
                 </div>

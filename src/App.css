@@ -7,7 +7,9 @@
     text-align: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    background: black;
+    background-image: url("https://www.vecteezy.com/free-vector/black-background");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 nav {
