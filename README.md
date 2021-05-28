@@ -21,7 +21,7 @@ The purpose of this app is to allow users to follow Austin FC by geting detailed
 - When I login, I can see all of the games I have attended
 - When I am logged in, I can go to the fixtures page, and mark that I have attended a specific game.
 
-## Routes Inventory
+## Routes Inventory 
 
 | Verb |        Path        |            Summary            |   |   |
 |:----:|:------------------:|:-----------------------------:|---|---|
