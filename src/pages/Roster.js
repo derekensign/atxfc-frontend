@@ -25,18 +25,18 @@ const Roster = () => {
     
     return (
         <div className="roster-container">
-            Roster
+            
 
             {roster.map((tile, i) => (
 
             <div key={i} className="roster-tile">
-                <h5>{tile.name}</h5>
-                <p>{`#${tile.number}`}</p>
+                <h4>{tile.name}</h4>
+                <div className="image-container">
+                    <img className="tile-image" src={tile.image}/>
+                </div>
+                <p><strong>{`#${tile.number}`}</strong></p>
                  <p>{`Age: ${tile.age}`}</p> 
                  <p>{`Position: ${tile.position}`}</p>
-                <div className="image-container">
-                    <img className="tile-image zoom" src={tile.image}/>
-                </div>
             </div>
             ))}
         </div>

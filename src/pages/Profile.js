@@ -5,7 +5,8 @@ const Profile = (props) => {
 
     return (
         <div className="favorites-container">
-            {props.favImages.map((tile, i) => (
+            Profile
+            {/* {props.favImages.map((tile, i) => (
 
             <div key={i} className="gallery-tile">
             <h5>{tile.title}</h5>
@@ -19,7 +20,7 @@ const Profile = (props) => {
                 </div>
             </div>
 
-))}
+))} */}
         </div>
     )
 }

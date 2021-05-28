@@ -6,6 +6,7 @@ import Roster from './pages/Roster'
 import Fixtures from './pages/Fixtures'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Profile from './pages/Profile'
 
 import {useEffect, useState} from 'react'
 import {Route, Redirect, Switch} from 'react-router-dom'
@@ -13,6 +14,7 @@ import {Link} from 'react-router-dom'
 
 function App() {
   const [user, setUser] = useState('')
+  const [attendedFixtures, setAttendedFixtures] = useState('')
   const [fixtureIds, setFixtureIds] = useState([])
 
   const getUser = async () => {
@@ -46,7 +48,7 @@ function App() {
         }
       })
       console.log(response)
-      // setFixtureIds(response.data.favImages)
+      // setAttendedFixtures(response.data.favImages)
 
       // let favFixtures = []
       
@@ -54,7 +56,7 @@ function App() {
       //   favFixtures.push(fixture.fixture_id)
       // }
 
-      setFixtureIds(favFixtures)
+      // setFixtureIds(favFixtures)
     } catch (error) {
       console.log(error)
     }
@@ -106,7 +108,7 @@ function App() {
       <Roster />
     </Route>
     <Route exact path="/profile">
-        <Profile favImages={favImages} isStarred={isStarred} deletePicture={deletePicture}
+        <Profile attendedFixtures={attendedFixtures} isSaved={isSaved} 
         user={user} setUser={setUser}/>
     </Route>
     <Route exact path="/login">
@@ -120,7 +122,8 @@ function App() {
       <Signup user={user} setUser={setUser}/>
     </Route>
     <Route exact path="/fixtures">
-      <Fixtures />
+      <Fixtures attendedFixtures={attendedFixtures} isSaved={isSaved} 
+        user={user} setUser={setUser}/>
     </Route>
 
 
