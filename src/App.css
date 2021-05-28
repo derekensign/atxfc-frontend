@@ -69,6 +69,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     background-color: #D3D3D3;
+    position: relative;
 }
 
 .away-box {
@@ -164,4 +165,12 @@ nav a:hover {
 
   .title {
       margin: 50px;
+  }
+
+  .tickets {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      height: 40px;
+      width: 40px;
   }

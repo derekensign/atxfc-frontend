@@ -54,6 +54,7 @@ const Fixtures = () => {
                             <img className="logo-img" src={game.teams.home.logo}></img>
                             <p>{game.goals.home}</p>
                         </div>
+                        <img className="tickets" src='./tickets.png'></img>
                     </div>
                 </div>
             ))}
